@@ -1,4 +1,10 @@
 <p align="center"><a><img width="400" src="./.github/assets/Logo.png" alt="Logo"></a></p>
+
+<div align="center">
+
+[![Kofi Badge](https://img.shields.io/badge/-Kofi-ff5f5f?style=flat-square&logo=Kofi&logoColor=white)](https://ko-fi.com/dominic_kofi) [![Patreon Badge](https://img.shields.io/badge/-Patreon-ffffff?style=flat-square&logo=Patreon&logoColor=ff424d)](https://www.patreon.com/user?u=57078534)
+</div>
+
 <br/>
 
 ## Introduce
