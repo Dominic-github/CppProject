@@ -1,1 +1,109 @@
-#CppTemplateProject
+<p align="center"><a><img width="400" src="./.github/assets/Logo.png" alt="Logo"></a></p>
+<br/>
+
+## Introduce
+
+Template project Cpp with [Cmake](https://cmake.org/)
+
+<br/>
+
+## Requirements
+
+* a modern C++17 compiler (`gcc-8`, `clang-6.0`, `MSVC 2017` or above)
+* [`cmake`](https://cmake.org) 3.10+
+* [git](https://git-scm.com/) (Optional)
+
+<br/>
+
+## Features
+* CMake-based project management, including dependencies
+* Support for shared/static libraries, including generation of export information
+
+<br/>
+
+## Project structure
+```
+   CppProject
+   ├── include
+   │   └── *.h             
+   │       
+   ├── src
+   │   └── main.cpp
+   │       
+   ├── .gitignore
+   ├── CmakeLists.txt
+   ├── LICENSE
+   └── Makefile
+```
+<br/>
+
+## Install
+
+Clone my project with [git](https://git-scm.com/)
+- ```
+    git clone https://github.com/Dominic-github/CppProject
+  ```
+
+OR dowload zip
+
+- [https://github.com/Dominic-github/CppProject/archive/refs/heads/main.zip](github.com/Dominic-github/CppProject/archive/refs/heads/main.zip)
+    
+<br/>
+
+## How to build
+**Step 1**: Run make setup to initialize the project with [git](https://git-scm.com/)
+  
+  -  ```
+        make setup 
+     ```
+
+OR delete my git
+
+  -  ```
+        make new
+     ```
+<br/>
+
+**Step 2**: Create build file
+-    ```
+        make prepare
+     ```
+<br/>
+
+**Step 3**: Build project from root Project
+
+-    ```
+        cd ./build
+        cmake ..
+        make
+     ```
+<br/>
+
+**Step 4**: Run file from root Project
+
+-    ```
+        ./build/.main
+     ```
+
+<br/>
+
+## Q&A 
+
+
+<br/>
+
+## ❤️ Support
+
+- If you like this project can support me 
+
+
+[![kofi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/Dominic_kofi)
+[![paypal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/DominicPPal)
+[![patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/Dominic_patreon)
+
+<br/>
+
+## License
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2023-present, Tan Hoang

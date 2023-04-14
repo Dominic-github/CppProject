@@ -5,8 +5,6 @@ project (directory_test)
 
 include_directories(include)
 
-# set(SOURCE src/main.cpp)
-
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 file(GLOB SOURCES "src/*.cpp")

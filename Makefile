@@ -8,8 +8,12 @@ prepare:
 	mkdir build
 
 setup:
-	rm -rf .git README.md LICENSE
+	rm -rf .git README.md LICENSE .github
 	git init
+
+new:
+	rm -rf .git README.md LICENSE .github
+
 
 
 
