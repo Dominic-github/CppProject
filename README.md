@@ -28,10 +28,12 @@ Template project Cpp with [Cmake](https://cmake.org/)
 - [choco](https://chocolatey.org/install)
 
 **Step 2**: Install package
+
+- [mingw](https://community.chocolatey.org/packages/mingw)
 - [make](https://community.chocolatey.org/packages/make)
 
 ```
-   choco install make 
+   choco install mingw make 
 ```
 
 <br/>
