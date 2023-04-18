@@ -20,6 +20,21 @@ Template project Cpp with [Cmake](https://cmake.org/)
 * [make]()
 * [git](https://git-scm.com/) (Optional)
 
+### Required for windows
+
+
+**Step 1**: Install choco
+
+- [choco](https://chocolatey.org/install)
+
+**Step 2**: Install package
+- [mingw](https://community.chocolatey.org/packages/mingw)
+- [make](https://community.chocolatey.org/packages/make)
+
+```
+   choco install mingw make 
+```
+
 <br/>
 
 ## Features
@@ -45,25 +60,6 @@ Template project Cpp with [Cmake](https://cmake.org/)
 <br/>
 
 ## Install
-
-
-### Required for windows
-
-**Step 1**: Install choco
-
-- [choco](https://chocolatey.org/install)
-
-**Step 2**: Install package
-- [mingw](https://community.chocolatey.org/packages/mingw)
-- [make](https://community.chocolatey.org/packages/make)
-
-```
-   choco install mingw make 
-```
-
-</br>
-
-### Linux
 Clone my project with [git](https://git-scm.com/)
 - ```
     git clone https://github.com/Dominic-github/CppProject
@@ -99,7 +95,7 @@ OR delete my git
      ```
 <br/>
 
-**Step 3**: Build project from root Project
+**Step 3**: Build project from root Project **(Only one for first build)**
 
 -    ```
         cd ./build
@@ -136,7 +132,7 @@ OR delete my git
      ```
 <br/>
 
-**Step 3**: Build project from root Project
+**Step 3**: Build project from root Project **(Only one for first build)**
 
 -    ```
         cd ./build
@@ -157,6 +153,11 @@ OR delete my git
 
    ### How to build again?
    - Run make on folder build
+      ```
+      cd build
+      make
+      ```
+
 
 
 <br/>
