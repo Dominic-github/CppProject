@@ -28,11 +28,10 @@ Template project Cpp with [Cmake](https://cmake.org/)
 - [choco](https://chocolatey.org/install)
 
 **Step 2**: Install package
-- [mingw](https://community.chocolatey.org/packages/mingw)
 - [make](https://community.chocolatey.org/packages/make)
 
 ```
-   choco install mingw make 
+   choco install make 
 ```
 
 <br/>
@@ -99,7 +98,7 @@ OR delete my git
 
 -    ```
         cd ./build
-        cmake .. -G "MinGW Makefiles"
+        cmake .. -G "Unix Makefiles"
         make  
      ```
 <br/>
