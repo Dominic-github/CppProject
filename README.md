@@ -16,7 +16,8 @@ Template project Cpp with [Cmake](https://cmake.org/)
 ## Requirements
 
 * a modern C++17 compiler (`gcc-8`, `clang-6.0`, `MSVC 2017` or above)
-* [`cmake`](https://cmake.org) 3.10+
+* [`cmake`](https://cmake.org) 3.15+
+* [make]()
 * [git](https://git-scm.com/) (Optional)
 
 <br/>
@@ -45,6 +46,24 @@ Template project Cpp with [Cmake](https://cmake.org/)
 
 ## Install
 
+
+### Required for windows
+
+**Step 1**: Install choco
+
+- [choco](https://chocolatey.org/install)
+
+**Step 2**: Install package
+- [mingw](https://community.chocolatey.org/packages/mingw)
+- [make](https://community.chocolatey.org/packages/make)
+
+```
+   choco install mingw make 
+```
+
+</br>
+
+### Linux
 Clone my project with [git](https://git-scm.com/)
 - ```
     git clone https://github.com/Dominic-github/CppProject
@@ -56,7 +75,48 @@ OR dowload zip
     
 <br/>
 
+
 ## How to build
+
+### Windows
+
+**Step 1**: Run make setup to initialize the project with [git](https://git-scm.com/)
+  
+  -  ```
+        make setup 
+     ```
+
+OR delete my git
+
+  -  ```
+        make new
+     ```
+<br/>
+
+**Step 2**: Create build file
+-    ```
+        make prepare
+     ```
+<br/>
+
+**Step 3**: Build project from root Project
+
+-    ```
+        cd ./build
+        cmake .. -G "MinGW Makefiles"
+        make  
+     ```
+<br/>
+
+**Step 4**: Run file from root Project
+
+-    ```
+        ./build/.main
+     ```
+
+<br/>
+
+### Linux 
 **Step 1**: Run make setup to initialize the project with [git](https://git-scm.com/)
   
   -  ```
@@ -94,6 +154,9 @@ OR delete my git
 <br/>
 
 ## Q&A 
+
+   ### How to build again?
+   - Run make on folder build
 
 
 <br/>
