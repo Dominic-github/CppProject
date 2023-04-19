@@ -3,6 +3,7 @@
 <div align="center">
 
 [![Kofi Badge](https://img.shields.io/badge/-Kofi-ff5f5f?style=flat-square&logo=Kofi&logoColor=white)](https://ko-fi.com/dominic_kofi) [![Patreon Badge](https://img.shields.io/badge/-Patreon-ffffff?style=flat-square&logo=Patreon&logoColor=ff424d)](https://www.patreon.com/user?u=57078534)
+
 </div>
 
 <br/>
@@ -15,13 +16,12 @@ Template project Cpp with [Cmake](https://cmake.org/)
 
 ## Requirements
 
-* a modern C++17 compiler (`gcc-8`, `clang-6.0`, `MSVC 2017` or above)
-* [`cmake`](https://cmake.org) 3.15+
-* [make]()
-* [git](https://git-scm.com/) (Optional)
+- a modern C++17 compiler (`gcc-8`, `clang-6.0`, `MSVC 2017` or above)
+- [`cmake`](https://cmake.org) 3.15+
+- [make]()
+- [git](https://git-scm.com/) (Optional)
 
 ### Required for windows
-
 
 **Step 1**: Install choco
 
@@ -29,39 +29,43 @@ Template project Cpp with [Cmake](https://cmake.org/)
 
 **Step 2**: Install package
 
-- [mingw](https://community.chocolatey.org/packages/mingw)
 - [make](https://community.chocolatey.org/packages/make)
 
 ```
-   choco install mingw make 
+   choco install make
 ```
 
 <br/>
 
 ## Features
-* CMake-based project management, including dependencies
-* Support for shared/static libraries, including generation of export information
+
+- CMake-based project management, including dependencies
+- Support for shared/static libraries, including generation of export information
 
 <br/>
 
 ## Project structure
+
 ```
    CppProject
    ├── include
-   │   └── *.h             
-   │       
+   │   └── *.h
+   │  
    ├── src
    │   └── main.cpp
-   │       
+   │  
    ├── .gitignore
    ├── CmakeLists.txt
    ├── LICENSE
    └── Makefile
 ```
+
 <br/>
 
 ## Install
+
 Clone my project with [git](https://git-scm.com/)
+
 - ```
     git clone https://github.com/Dominic-github/CppProject
   ```
@@ -69,104 +73,110 @@ Clone my project with [git](https://git-scm.com/)
 OR dowload zip
 
 - [https://github.com/Dominic-github/CppProject/archive/refs/heads/main.zip](github.com/Dominic-github/CppProject/archive/refs/heads/main.zip)
-    
-<br/>
 
+<br/>
 
 ## How to build
 
 ### Windows
 
 **Step 1**: Run make setup to initialize the project with [git](https://git-scm.com/)
-  
-  -  ```
-        make setup 
-     ```
+
+- ```
+     make setup
+  ```
 
 OR delete my git
 
-  -  ```
-        make new
-     ```
-<br/>
+- ````
+          make new
+       ```
+  <br/>
+  ````
 
 **Step 2**: Create build file
--    ```
-        make prepare
-     ```
-<br/>
+
+- ````
+          make prepare
+       ```
+  <br/>
+  ````
 
 **Step 3**: Build project from root Project **(Only one for first build)**
 
--    ```
-        cd ./build
-        cmake .. -G "Unix Makefiles"
-        make  
-     ```
-<br/>
+- ````
+          cd ./build
+          cmake .. -G "Unix Makefiles"
+          make
+       ```
+  <br/>
+  ````
 
 **Step 4**: Run file from root Project
 
--    ```
-        ./build/.main
-     ```
+- ```
+     ./build/.main
+  ```
 
 <br/>
 
-### Linux 
+### Linux
+
 **Step 1**: Run make setup to initialize the project with [git](https://git-scm.com/)
-  
-  -  ```
-        make setup 
-     ```
+
+- ```
+     make setup
+  ```
 
 OR delete my git
 
-  -  ```
-        make new
-     ```
-<br/>
+- ````
+          make new
+       ```
+  <br/>
+  ````
 
 **Step 2**: Create build file
--    ```
-        make prepare
-     ```
-<br/>
+
+- ````
+          make prepare
+       ```
+  <br/>
+  ````
 
 **Step 3**: Build project from root Project **(Only one for first build)**
 
--    ```
-        cd ./build
-        cmake ..
-        make
-     ```
-<br/>
+- ````
+          cd ./build
+          cmake ..
+          make
+       ```
+  <br/>
+  ````
 
 **Step 4**: Run file from root Project
 
--    ```
-        ./build/.main
-     ```
+- ```
+     ./build/.main
+  ```
 
 <br/>
 
-## Q&A 
+## Q&A
 
-   ### How to build again?
-   - Run make on folder build
-      ```
-      cd build
-      make
-      ```
+### How to build again?
 
-
+- Run make on folder build
+  ```
+  cd build
+  make
+  ```
 
 <br/>
 
 ## ❤️ Support
 
-- If you like this project can support me 
-
+- If you like this project can support me
 
 [![kofi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/Dominic_kofi)
 [![paypal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/DominicPPal)
@@ -175,6 +185,7 @@ OR delete my git
 <br/>
 
 ## License
+
 [MIT](https://opensource.org/licenses/MIT)
 
 Copyright (c) 2023-present, Tan Hoang
