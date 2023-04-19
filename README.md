@@ -66,9 +66,9 @@ Template project Cpp with [Cmake](https://cmake.org/)
 
 Clone my project with [git](https://git-scm.com/)
 
- - ```
-    git clone https://github.com/Dominic-github/CppProject
-   ```
+- ```
+  git clone https://github.com/Dominic-github/CppProject
+  ```
 
 OR dowload zip
 
@@ -82,44 +82,40 @@ OR dowload zip
 
 **Step 1**: Run make setup to initialize the project with [git](https://git-scm.com/)
 
- - ```
-     make setup
-   ```
+- ```
+  make setup
+  ```
 
 OR delete my git
 
- - ```
-          make new
-   ```
-  
+- ```
+  make new
+  ```
+
   <br/>
-  
 
 **Step 2**: Create build file
 
- - ```
-          make prepare
-   ```
-  
+- ```
+  make prepare
+  ```
+
   <br/>
-  
 
 **Step 3**: Build project from root Project **(Only one for first build)**
 
- - ```
-          cd ./build
-          cmake .. -G "Unix Makefiles"
-          make
-   ```
-
+- ```
+  cd ./build
+  cmake .. -G "Unix Makefiles"
+  make
+  ```
   <br/>
- 
 
 **Step 4**: Run file from root Project
 
- - ```
-     ./build/.main
-   ```
+- ```
+  ./build/.main
+  ```
 
 <br/>
 
@@ -127,45 +123,38 @@ OR delete my git
 
 **Step 1**: Run make setup to initialize the project with [git](https://git-scm.com/)
 
- - ```
-     make setup
-   ```
+- ```
+  make setup
+  ```
 
 OR delete my git
 
- - ```
-          make new
-   ```
- 
- <br/>
- 
+- ```
+  make new
+  ```
+  <br/>
 
 **Step 2**: Create build file
 
- - ```
-          make prepare
-   ```
-  
-  
+- ```
+  make prepare
+  ```
   <br/>
-
 
 **Step 3**: Build project from root Project **(Only one for first build)**
 
- - ```
-          cd ./build
-          cmake ..
-          make
-   
-   ```
-  
+- ```
+  cd ./build
+  cmake ..
+  make
+  ```
   <br/>
 
 **Step 4**: Run file from root Project
 
- - ```
-     ./build/.main
-   ```
+- ```
+  ./build/.main
+  ```
 
 <br/>
 
@@ -175,8 +164,8 @@ OR delete my git
 
 - Run make on folder build
   ```
-   cd build
-   make
+  cd build
+  make
   ```
 
 <br/>
