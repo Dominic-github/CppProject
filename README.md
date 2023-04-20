@@ -30,10 +30,10 @@ Template project Cpp with [Cmake](https://cmake.org/)
 **Step 2**: Install package
 
 - [make](https://community.chocolatey.org/packages/make)
-- [mingw](https://community.chocolatey.org/packages/mingw)
+- [llvm](https://community.chocolatey.org/packages/llvm)
 
 ```
-   choco install mingw make
+   choco install llvm make
 ```
 
 <br/>
