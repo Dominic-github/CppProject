@@ -17,10 +17,10 @@ jobs:
     if: "!contains(github.event.head_commit.message, '[skip ci]') && !contains(github.event.head_commit.message, '[ci skip]')"
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: cache dependencies
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       id: cache
       with:
         path: ${{env.INSTALL_LOCATION}}
@@ -30,15 +30,14 @@ jobs:
       if: ${{steps.cache.output.cache-hit != 'true'}}
       run: |
         cd ..
-        git clone https://github.com/google/googletest.git --branch release-1.10.0
+        git clone https://github.com/google/googletest.git --branch release-1.13.0
         cd googletest
         cmake -Bbuild -DCMAKE_INSTALL_PREFIX="$HOME/$env:INSTALL_LOCATION" -Dgtest_force_shared_crt=1
         cmake --build build --config Release
-        cmake --build build --target install --config Release
         cd ../CppProject
 
     - name: configure
-      run: cmake -Bbuild -DCMAKE_INSTALL_PREFIX="$HOME/$env:INSTALL_LOCATION"
+      run: cmake -B build -DCMAKE_INSTALL_PREFIX="$HOME/$env:INSTALL_LOCATION"
       
     - name: build
       run: cmake --build build --config "$env:BUILD_TYPE" -j4
@@ -48,5 +47,3 @@ jobs:
         cd build
         ctest -C "$env:BUILD_TYPE" -VV
 
-    - name: install project
-      run: cmake --build build --target install --config Release 
