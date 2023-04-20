@@ -92,11 +92,6 @@ OR dowload zip
   make setup
   ```
 
-OR delete my git
-
-- ```
-  make new
-  ```
 
   <br/>
 
@@ -133,11 +128,6 @@ OR delete my git
   make setup
   ```
 
-OR delete my git
-
-- ```
-  make new
-  ```
   <br/>
 
 **Step 2**: Create build file
