@@ -28,8 +28,3 @@ setup:
 	$(RM) README.md
 	$(makeNewGit)
 
-
-new:
-	$(RM) README.md
-	$(RMDIR) .github .git
-
