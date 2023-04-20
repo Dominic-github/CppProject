@@ -17,8 +17,8 @@ Template project Cpp with [Cmake](https://cmake.org/)
 ## Requirements
 
 - a modern C++17 compiler (`gcc-8`, `clang-6.0`, `MSVC 2017` or above)
-- [`cmake`](https://cmake.org) 3.15+
-- [make]()
+- [cmake](https://cmake.org) 3.15+
+- [make](https://www.gnu.org/software/make/manual/make.html)
 - [git](https://git-scm.com/) (Optional)
 
 ### Required for windows
@@ -30,10 +30,10 @@ Template project Cpp with [Cmake](https://cmake.org/)
 **Step 2**: Install package
 
 - [make](https://community.chocolatey.org/packages/make)
-- [llvm](https://community.chocolatey.org/packages/llvm)
+- [mingw](https://community.chocolatey.org/packages/llvm)
 
 ```
-   choco install llvm make
+   choco install mingw make
 ```
 
 <br/>
