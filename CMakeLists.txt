@@ -3,7 +3,7 @@
 # This is a minimal CMakeLists file which includes the Yoctopuce C++ lib.
 cmake_minimum_required(VERSION 3.16)
 
-project (directory_test)
+project (CppProject)
 
 include_directories(include)
 

@@ -30,9 +30,10 @@ Template project Cpp with [Cmake](https://cmake.org/)
 **Step 2**: Install package
 
 - [make](https://community.chocolatey.org/packages/make)
+- [mingw](https://community.chocolatey.org/packages/mingw)
 
 ```
-   choco install make
+   choco install mingw make
 ```
 
 <br/>
@@ -41,6 +42,8 @@ Template project Cpp with [Cmake](https://cmake.org/)
 
 - CMake-based project management, including dependencies
 - Support for shared/static libraries, including generation of export information
+- CI workflows for Windows, Linux and MacOS using GitHub Actions, making use of the caching features, to ensure minimum run time
+- Permissive license to allow you to integrate it as easily as possible. The template is licensed under the Unlicense,
 
 <br/>
 
@@ -48,6 +51,9 @@ Template project Cpp with [Cmake](https://cmake.org/)
 
 ```
    CppProject
+   │  
+   ├── build      
+   │  
    ├── include
    │   └── *.h
    │  
@@ -167,6 +173,11 @@ OR delete my git
   cd build
   make
   ```
+### Support git action
+
+
+- You should make changes in the GitHub workflows provided, notably [.github/workflows/ubuntu.yml](https://github.com/Dominic-github/CppProject/blob/main/.github/workflows/ubuntu.yml)
+
 
 <br/>
 
