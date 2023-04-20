@@ -46,20 +46,20 @@ jobs:
       if: ${{ runner.os == 'Windows' }}
       run: |
         $TAG = (${env:GITHUB_REF} -replace 'refs/tags/', '')
-        echo "::set-output name=name::$TAG"
+        echo "::save-state name=name::$TAG"
     
     - name: set version name
       id: version
       if: ${{ runner.os != 'Windows' }}
-      run: echo ::set-output name=name::${GITHUB_REF#refs/tags/}
+      run: echo ::save-state name=name::${GITHUB_REF#refs/tags/}
 
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         submodules: recursive
 
     - name: cache dependencies
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       id: cache
       with:
         path: ${{ github.HOME }}/.local
@@ -103,14 +103,14 @@ jobs:
         tar -cvzf $HOME/artifact.tar.gz .
 
     - name: upload artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: ${{ runner.os == 'Windows' }}
       with:
         name: ${{ runner.os }}-${{ steps.version_win.outputs.name }}
         path: '~/artifact.*'
 
     - name: upload artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: ${{ runner.os != 'Windows' }}
       with:
         name: ${{ runner.os }}-${{ steps.version.outputs.name }}
@@ -124,7 +124,7 @@ jobs:
     steps:
     - name: set version name
       id: version
-      run: echo ::set-output name=name::${GITHUB_REF#refs/tags/}
+      run: echo ::save-state name=name::${GITHUB_REF#refs/tags/}
 
     - name: create release
       id: create_release
@@ -140,7 +140,7 @@ jobs:
         prerelease: false
 
     - name: download artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v3
       with:
         name: "Linux-${{ steps.version.outputs.name }}"
         path: ./
