@@ -73,55 +73,17 @@ Template project Cpp with [Cmake](https://cmake.org/)
 Clone my project with [git](https://git-scm.com/)
 
 - ```
-  git clone https://github.com/Dominic-github/CppProject
+  git clone https://github.com/Dominic-github/CppProject --depth 1 [Name Your Project]
   ```
 
 OR dowload zip
 
-- [https://github.com/Dominic-github/CppProject/archive/refs/heads/main.zip](github.com/Dominic-github/CppProject/archive/refs/heads/main.zip)
+- [https://github.com/Dominic-github/CppProject/archive/refs/heads/main.zip](https://github.com/Dominic-github/CppProject/archive/refs/heads/main.zip)
 
 <br/>
 
 ## How to build
 
-### Windows
-
-**Step 1**: Run make setup to initialize the project with [git](https://git-scm.com/)
-
-- ```
-  make setup
-  ```
-
-
-  <br/>
-
-**Step 2**: Create build file
-
-- ```
-  make prepare
-  ```
-
-  <br/>
-
-**Step 3**: Build project from root Project **(Only one for first build)**
-
-- ```
-  cd ./build
-  cmake .. -G "Unix Makefiles"
-  make
-  ```
-  <br/>
-
-**Step 4**: Run file from root Project
-
-- ```
-  ./build/.main
-  ```
-
-<br/>
-
-### Linux
-
 **Step 1**: Run make setup to initialize the project with [git](https://git-scm.com/)
 
 - ```
@@ -130,27 +92,22 @@ OR dowload zip
 
   <br/>
 
-**Step 2**: Create build file
+
+**Step 2**: Build project
 
 - ```
-  make prepare
+  make all
+  make rebuild
   ```
   <br/>
 
-**Step 3**: Build project from root Project **(Only one for first build)**
+**Step 3**: Run file from root Project
 
 - ```
-  cd ./build
-  cmake ..
-  make
+  make run
   ```
-  <br/>
 
-**Step 4**: Run file from root Project
-
-- ```
-  ./build/.main
-  ```
+You can see more make on [Makefile](https://github.com/Dominic-github/CppProject/blob/main/Makefile)
 
 <br/>
 
@@ -160,11 +117,9 @@ OR dowload zip
 
 - Run make on folder build
   ```
-  cd build
-  make
+  make rebuild
   ```
 ### Support git action
-
 
 - You should make changes in the GitHub workflows provided, notably [.github/workflows/ubuntu.yml](https://github.com/Dominic-github/CppProject/blob/main/.github/workflows/ubuntu.yml)
 
