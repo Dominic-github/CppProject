@@ -34,7 +34,7 @@ jobs:
         cd googletest
         cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$GITHUB_WORKSPACE/$INSTALL_LOCATION
         cmake --build build --config Release
-        cd ../CppProject
+        cd ../${{ github.event.repository.name }}
 
 
     - name: configure

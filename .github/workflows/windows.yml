@@ -34,7 +34,7 @@ jobs:
         cd googletest
         cmake -Bbuild -DCMAKE_INSTALL_PREFIX="$HOME/$env:INSTALL_LOCATION" -Dgtest_force_shared_crt=1
         cmake --build build --config Release
-        cd ../CppProject
+        cd ../${{ github.event.repository.name }}
 
     - name: configure
       run: cmake -B build -DCMAKE_INSTALL_PREFIX="$HOME/$env:INSTALL_LOCATION"

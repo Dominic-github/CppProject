@@ -55,9 +55,18 @@ Template project Cpp with [Cmake](https://cmake.org/)
    ├── build      
    │  
    ├── include
+   |   |
+   |   ├── lib          library 
+   |   |    └── *.h      
+   |   |
    │   └── *.h
    │  
    ├── src
+   |   |
+   |   ├── lib          library source
+   |   |    └── *.cpp
+   |   | 
+   |   ├── *.cpp
    │   └── main.cpp
    │  
    ├── .gitignore
@@ -115,9 +124,15 @@ You can see more make on [Makefile](https://github.com/Dominic-github/CppProject
 
 ### How to build again?
 
-- Run make on folder build
+- Run make on folder build, see on [Makefile](https://github.com/Dominic-github/CppProject/blob/main/Makefile)
+```
+    make rebuild
+```
+### Create lib folder
+ - You can create folder on [include](https://github.com/Dominic-github/CppProject/blob/main/include) and [src](https://github.com/Dominic-github/CppProject/blob/main/src) with name's folder is lib
   ```
-  make rebuild
+    mkdir include/lib
+    mkdir src/lib
   ```
 ### Support git action
 
