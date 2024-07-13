@@ -30,10 +30,11 @@ Template project Cpp with [Cmake](https://cmake.org/)
 **Step 2**: Install package
 
 - [make](https://community.chocolatey.org/packages/make)
+- [cmake](https://community.chocolatey.org/packages/cmake)
 - [mingw](https://community.chocolatey.org/packages/llvm)
 
 ```
-   choco install mingw make
+   choco install mingw make cmake
 ```
 
 <br/>
@@ -52,12 +53,12 @@ Template project Cpp with [Cmake](https://cmake.org/)
 ```
    CppProject
    │  
-   ├── build      
+   ├── build
    │  
    ├── include
    |   |
-   |   ├── lib          library 
-   |   |    └── *.h      
+   |   ├── lib          library
+   |   |    └── *.h
    |   |
    │   └── *.h
    │  
@@ -65,7 +66,7 @@ Template project Cpp with [Cmake](https://cmake.org/)
    |   |
    |   ├── lib          library source
    |   |    └── *.cpp
-   |   | 
+   |   |
    |   ├── *.cpp
    │   └── main.cpp
    │  
@@ -101,7 +102,6 @@ OR dowload zip
 
   <br/>
 
-
 **Step 2**: Build project
 
 - ```
@@ -125,19 +125,23 @@ You can see more make on [Makefile](https://github.com/Dominic-github/CppProject
 ### How to build again?
 
 - Run make on folder build, see on [Makefile](https://github.com/Dominic-github/CppProject/blob/main/Makefile)
+
 ```
     make rebuild
 ```
+
 ### Create lib folder
- - You can create folder on [include](https://github.com/Dominic-github/CppProject/blob/main/include) and [src](https://github.com/Dominic-github/CppProject/blob/main/src) with name's folder is lib
-  ```
-    mkdir include/lib
-    mkdir src/lib
-  ```
+
+- You can create folder on [include](https://github.com/Dominic-github/CppProject/blob/main/include) and [src](https://github.com/Dominic-github/CppProject/blob/main/src) with name's folder is lib
+
+```
+  mkdir include/lib
+  mkdir src/lib
+```
+
 ### Support git action
 
 - You should make changes in the GitHub workflows provided, notably [.github/workflows/ubuntu.yml](https://github.com/Dominic-github/CppProject/blob/main/.github/workflows/ubuntu.yml)
-
 
 <br/>
 
