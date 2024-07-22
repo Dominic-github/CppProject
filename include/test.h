@@ -1,8 +1,8 @@
+#pragma one
 #define TEST_H
 #ifdef TEST_H
 
-#include <iostream>
-#include <string>
+#include<bits/stdc++.h>
 
 class Test {
 private:
